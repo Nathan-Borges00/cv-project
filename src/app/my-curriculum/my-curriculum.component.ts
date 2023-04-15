@@ -11,8 +11,5 @@ export class MyCurriculumComponent implements OnInit {
 
     constructor(private sanitizer: DomSanitizer) {}
 
-    ngOnInit() {
-        const imageSrc = 'assets/image.png'; // caminho da imagem na pasta de assets
-        this.imageUrl = this.sanitizer.bypassSecurityTrustResourceUrl(imageSrc);
-    }
+    ngOnInit() {}
 }
