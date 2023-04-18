@@ -4,26 +4,25 @@
 }
 
 .title-section {
-    max-width: 100vh;
-    min-height: 100px;
+    max-width: 1000px;
+    min-height: 1000px;
     background-color: white;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.9);
 }
 
 .left-side {
     background-color: rgb(37, 33, 33);
-    padding: 40px;
-    flex-basis: 40%;
+    padding: 20px;
+}
+
+.right-side {
+    background-color: white;
 }
 
 h5 {
     color: hsl(162, 99%, 28%);
     font-weight: bold;
-}
-
-.right-side {
-    background-color: white;
-    /* padding: 40px; */
-    flex-basis: 60%;
 }
 
 #title h4 {
@@ -46,22 +45,29 @@ h5 {
 }
 
 #hard-skills img {
-    width: 80px;
-    height: 80px;
+    width: 40px;
+    height: 40px;
     filter: grayscale(100%);
-}
-
-section p {
-    font-size: small;
 }
 
 #titulo hr {
     opacity: 0.5;
 }
 
+#certifications button {
+    background-image: url(../../assets/imgs/ts.png); //colocar print do certificado
+    background-size: cover;
+    width: 9rem;
+    height: 6rem;
+}
+
 img {
     width: 200px;
     height: 200px;
+}
+
+section p {
+    font-size: small;
 }
 
 .progress-bar {
@@ -70,4 +76,12 @@ img {
 
 .fa-2xl {
     font-size: 4em;
+}
+
+.year-company h6 {
+    color: hsla(162, 100%, 40%, 0.841);
+}
+
+#engineer-jr {
+    width: 58%;
 }
