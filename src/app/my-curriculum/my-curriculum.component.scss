@@ -1,87 +1,124 @@
-.background-screen {
+.main {
     background: darkslategray;
     min-height: 100vh;
-}
+    .name-section {
+        max-width: 1000px;
+        min-height: 1000px;
+        background-color: white;
+        box-shadow: 0 35px 55px rgba(0, 0, 0, 0.9);
+        .left-side {
+            background-color: rgb(37, 33, 33);
+            padding: 20px;
+            flex-basis: 30%;
 
-.title-section {
-    max-width: 1000px;
-    min-height: 1000px;
-    background-color: white;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.9);
-}
+            .progress {
+                background-color: rgb(56, 50, 50);
+            }
+            .progress-bar {
+                background-color: hsla(162, 100%, 40%, 0.66) !important;
+            }
 
-.left-side {
-    background-color: rgb(37, 33, 33);
-    padding: 20px;
-}
+            #title {
+                h4 {
+                    color: hsla(162, 100%, 40%, 0.537);
+                    font-weight: bold;
+                }
+                h3 {
+                    color: hsl(162, 100%, 40%);
+                    font-weight: bold;
+                }
+                hr {
+                    opacity: 0.5;
+                }
+            }
 
-.right-side {
-    background-color: white;
-}
+            #profile {
+                text-align: justify;
+            }
 
-h5 {
-    color: hsl(162, 99%, 28%);
-    font-weight: bold;
-}
+            #social-midias {
+                a {
+                    color: inherit;
+                }
+            }
 
-#title h4 {
-    color: hsla(162, 100%, 40%, 0.537);
-    font-weight: bold;
-}
+            #education {
+                h6 {
+                    color: hsla(162, 98%, 24%, 0.781);
+                    font-weight: bold;
+                }
+            }
+        }
+        .right-side {
+            background-color: rgb(231, 231, 231);
+            flex-basis: 70%;
 
-#title h3 {
-    color: hsl(162, 100%, 40%);
-    font-weight: bold;
-}
+            h3 {
+                font-weight: bold;
+            }
 
-#contact-info i {
-    color: hsla(162, 100%, 40%, 0.537);
-}
+            .progress {
+                background-color: rgba(56, 50, 50, 0.111);
+            }
 
-#education h6 {
-    color: hsla(162, 98%, 24%, 0.781);
-    font-weight: bold;
-}
+            .progress-bar {
+                background-color: hsla(162, 100%, 40%, 0.66) !important;
+            }
 
-#hard-skills img {
-    width: 40px;
-    height: 40px;
-    filter: grayscale(100%);
-}
+            #experience {
+                text-align: justify;
 
-#titulo hr {
-    opacity: 0.5;
-}
+                .year-company {
+                    h6 {
+                        color: hsla(162, 100%, 40%, 0.841);
+                    }
+                }
 
-#certifications button {
-    background-image: url(../../assets/imgs/ts.png); //colocar print do certificado
-    background-size: cover;
-    width: 9rem;
-    height: 6rem;
-}
+                #engineer-jr {
+                    width: 43%;
+                }
 
-img {
-    width: 200px;
-    height: 200px;
-}
+                #stag {
+                    width: 55%;
+                }
+            }
 
-section p {
-    font-size: small;
-}
+            #hard-skills {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    filter: grayscale(100%);
+                }
+            }
 
-.progress-bar {
-    background-color: hsla(162, 100%, 40%, 0.66) !important;
-}
+            #certifications {
+                button {
+                    // background-image: url(../../assets/imgs/ts.png); //colocar print do certificado
+                    background-size: cover;
+                    width: 9rem;
+                    height: 6rem;
+                }
+            }
+        }
+    }
 
-.fa-2xl {
-    font-size: 4em;
-}
+    h5 {
+        color: hsl(162, 99%, 28%);
+        font-weight: bold;
+    }
 
-.year-company h6 {
-    color: hsla(162, 100%, 40%, 0.841);
-}
+    i {
+        color: hsla(162, 100%, 40%, 0.537);
+    }
 
-#engineer-jr {
-    width: 58%;
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    section {
+        p {
+            font-size: small;
+        }
+    }
 }
