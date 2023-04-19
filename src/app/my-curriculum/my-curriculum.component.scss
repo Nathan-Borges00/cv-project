@@ -1,14 +1,13 @@
 .main {
     background: darkslategray;
     min-height: 100vh;
-    .name-section {
+    .curriculum {
         max-width: 1000px;
         min-height: 1000px;
         background-color: white;
         box-shadow: 0 35px 55px rgba(0, 0, 0, 0.9);
         .left-side {
             background-color: rgb(37, 33, 33);
-            padding: 20px;
             flex-basis: 30%;
 
             .progress {
@@ -119,6 +118,78 @@
     section {
         p {
             font-size: small;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .main {
+        .curriculum {
+            margin: 3% !important;
+            flex-direction: column;
+
+            .left-side {
+                section {
+                    margin: 0px !important;
+                }
+            }
+
+            .right-side {
+                #experience {
+                    .responsive-screen {
+                        flex-direction: column;
+                    }
+
+                    .fw-bolder {
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+
+        section {
+            p {
+                font-size: larger;
+            }
+        }
+    }
+}
+
+@media (max-width: 562px) {
+    .main {
+        section {
+            p {
+                font-size: large;
+            }
+        }
+    }
+}
+
+@media (max-width: 531px) {
+    .main {
+        section {
+            p {
+                font-size: medium;
+            }
+        }
+    }
+}
+
+@media (max-width: 478px) {
+    .main {
+        section {
+            p {
+                font-size: smaller;
+            }
+        }
+    }
+}
+
+@media (max-width: 407px) {
+    .main {
+        section {
+            p {
+                font-size: x-small;
+            }
         }
     }
 }
