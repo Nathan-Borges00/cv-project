@@ -18,6 +18,10 @@
             }
 
             #title {
+                .download {
+                    font-size: x-large;
+                    color: whitesmoke;
+                }
                 h4 {
                     color: hsla(162, 100%, 40%, 0.537);
                     font-weight: bold;
@@ -128,6 +132,9 @@
             flex-direction: column;
 
             .left-side {
+                .download {
+                    display: none;
+                }
                 section {
                     margin: 0px !important;
                 }
