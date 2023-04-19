@@ -1,0 +1,202 @@
+.main {
+    background: darkslategray;
+    min-height: 100vh;
+    .curriculum {
+        max-width: 1000px;
+        min-height: 1000px;
+        background-color: white;
+        box-shadow: 0 35px 55px rgba(0, 0, 0, 0.9);
+        .left-side {
+            background-color: rgb(37, 33, 33);
+            flex-basis: 30%;
+
+            .progress {
+                background-color: rgb(56, 50, 50);
+            }
+            .progress-bar {
+                background-color: hsla(162, 100%, 40%, 0.66) !important;
+            }
+
+            #title {
+                .download {
+                    font-size: x-large;
+                    color: whitesmoke;
+                }
+                h4 {
+                    color: hsla(162, 100%, 40%, 0.537);
+                    font-weight: bold;
+                }
+                h3 {
+                    color: hsl(162, 100%, 40%);
+                    font-weight: bold;
+                }
+                hr {
+                    opacity: 0.5;
+                }
+            }
+
+            #profile {
+                text-align: justify;
+            }
+
+            #social-midias {
+                a {
+                    color: inherit;
+                }
+            }
+
+            #education {
+                h6 {
+                    color: hsla(162, 98%, 24%, 0.781);
+                    font-weight: bold;
+                }
+            }
+        }
+        .right-side {
+            background-color: rgb(231, 231, 231);
+            flex-basis: 70%;
+
+            h3 {
+                font-weight: bold;
+            }
+
+            .progress {
+                background-color: rgba(56, 50, 50, 0.111);
+            }
+
+            .progress-bar {
+                background-color: hsla(162, 100%, 40%, 0.66) !important;
+            }
+
+            #experience {
+                text-align: justify;
+
+                .year-company {
+                    h6 {
+                        color: hsla(162, 100%, 40%, 0.841);
+                    }
+                }
+
+                #engineer-jr {
+                    width: 43%;
+                }
+
+                #stag {
+                    width: 55%;
+                }
+            }
+
+            #hard-skills {
+                img {
+                    width: 40px;
+                    height: 40px;
+                    filter: grayscale(100%);
+                }
+            }
+
+            #certifications {
+                button {
+                    // background-image: url(../../assets/imgs/ts.png); //colocar print do certificado
+                    background-size: cover;
+                    width: 9rem;
+                    height: 6rem;
+                }
+            }
+        }
+    }
+
+    h5 {
+        color: hsl(162, 99%, 28%);
+        font-weight: bold;
+    }
+
+    i {
+        color: hsla(162, 100%, 40%, 0.537);
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+
+    section {
+        p {
+            font-size: small;
+        }
+    }
+}
+@media (max-width: 800px) {
+    .main {
+        .curriculum {
+            margin: 3% !important;
+            flex-direction: column;
+
+            .left-side {
+                .download {
+                    display: none;
+                }
+                section {
+                    margin: 0px !important;
+                }
+            }
+
+            .right-side {
+                #experience {
+                    .responsive-screen {
+                        flex-direction: column;
+                    }
+
+                    .fw-bolder {
+                        margin: 0px;
+                    }
+                }
+            }
+        }
+
+        section {
+            p {
+                font-size: larger;
+            }
+        }
+    }
+}
+
+@media (max-width: 562px) {
+    .main {
+        section {
+            p {
+                font-size: large;
+            }
+        }
+    }
+}
+
+@media (max-width: 531px) {
+    .main {
+        section {
+            p {
+                font-size: medium;
+            }
+        }
+    }
+}
+
+@media (max-width: 478px) {
+    .main {
+        section {
+            p {
+                font-size: smaller;
+            }
+        }
+    }
+}
+
+@media (max-width: 407px) {
+    .main {
+        section {
+            p {
+                font-size: x-small;
+            }
+        }
+    }
+}
