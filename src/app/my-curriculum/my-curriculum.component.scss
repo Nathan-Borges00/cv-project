@@ -95,11 +95,19 @@
             }
 
             #certifications {
-                button {
-                    // background-image: url(../../assets/imgs/ts.png); //colocar print do certificado
-                    background-size: cover;
-                    width: 9rem;
-                    height: 6rem;
+                .certificate {
+                    .certificate-itens {
+                        width: 201px;
+                        text-align: center;
+
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                    img {
+                        width: 200px;
+                        height: 100px;
+                    }
                 }
             }
         }
@@ -163,6 +171,15 @@
 
 @media (max-width: 562px) {
     .main {
+        .curriculum {
+            .right-side {
+                #certifications {
+                    .certificate {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
         section {
             p {
                 font-size: large;

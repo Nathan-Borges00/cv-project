@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CertificateService } from './services/certificate.service';
+import { Certificate } from './interfaces/certificate';
 
 @Component({
     selector: 'app-my-curriculum',
@@ -6,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./my-curriculum.component.scss'],
 })
 export class MyCurriculumComponent implements OnInit {
-    constructor() {}
+    certificates: Certificate[] = [];
 
-    ngOnInit() {}
+    constructor(private certificateService: CertificateService) {}
+
+    ngOnInit() {
+        this.certificates = this.certificateService.getCertificates();
+    }
+
+    openPdf(pdfPath: string): void {
+        window.open(pdfPath, '_blank');
+    }
 }
