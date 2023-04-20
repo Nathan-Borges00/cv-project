@@ -17,19 +17,24 @@ export class CertificateService {
             pdfPath: '../assets/certifications/CertificadoInglesCIT.pdf',
         },
         {
-            name: 'Certificado Introdução a linguagem JavaScript',
+            name: 'Certificado conclusão Introdução a linguagem JavaScript',
             image: '../assets/certifications/certificadoJavaScript.jpeg',
             pdfPath: '../assets/certifications/IntroduçãolinguagemJavaScript.pdf',
         },
         {
-            name: 'Certificado conclusão teste nível de inglês',
-            image: '../assets/certifications/',
-            pdfPath: '../assets/certifications/',
+            name: 'Certificado conclusão introdução entity framework core',
+            image: '../assets/certifications/Certificado_IntroduçãoaoEntityFrameworkCore_NathanFerreiraBorges.png',
+            pdfPath: '../assets/certifications/Certificado_IntroduçãoaoEntityFrameworkCore_NathanFerreiraBorges.png',
         },
         {
-            name: 'Certificado conclusão teste nível de inglês',
-            image: '../assets/certifications/',
-            pdfPath: '../assets/certifications/',
+            name: 'Certificado conclusão asp .net core',
+            image: '../assets/certifications/Certificado_IniciandocomASP.NETCore_NathanFerreiraBorges.png',
+            pdfPath: '../assets/certifications/Certificado_IniciandocomASP.NETCore_NathanFerreiraBorges.png',
+        },
+        {
+            name: 'Certificado conclusão fundamentos arquitetura de software',
+            image: '../assets/certifications/Certificado_FundamentosdeArquiteturadeSoftware_NathanFerreiraBorges.png',
+            pdfPath: '../assets/certifications/Certificado_FundamentosdeArquiteturadeSoftware_NathanFerreiraBorges.png',
         },
     ];
 
