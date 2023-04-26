@@ -1,6 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsla(162, 100%, 40%, 0.66);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: darkslategray;
+}
+
 * {
     font-family: 'Poppins';
     margin: 0px;

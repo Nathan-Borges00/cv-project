@@ -7,32 +7,32 @@ import { Certificate } from '../interfaces/certificate';
 export class CertificateService {
     certificates: Certificate[] = [
         {
-            name: 'Diploma faculdade UNIP',
+            name: 'UNIP college diploma.',
             image: '../assets/certifications/diplomaFaculdadeUnip.jpeg',
             pdfPath: '../assets/certifications/DiplomaFaculdade.pdf',
         },
         {
-            name: 'Certificado conclusão teste nível de inglês',
+            name: 'Certificate of completion of English proficiency test.',
             image: '../assets/certifications/certificadoTesteNivelInglesCIT.jpeg',
             pdfPath: '../assets/certifications/CertificadoInglesCIT.pdf',
         },
         {
-            name: 'Certificado conclusão Introdução a linguagem JavaScript',
+            name: 'Certificate of completion of Introduction to JavaScript Language course.',
             image: '../assets/certifications/certificadoJavaScript.jpeg',
             pdfPath: '../assets/certifications/IntroduçãolinguagemJavaScript.pdf',
         },
         {
-            name: 'Certificado conclusão introdução entity framework core',
+            name: 'Certificate of completion of Introduction to Entity Framework Core course.',
             image: '../assets/certifications/Certificado_IntroduçãoaoEntityFrameworkCore_NathanFerreiraBorges.png',
             pdfPath: '../assets/certifications/Certificado_IntroduçãoaoEntityFrameworkCore_NathanFerreiraBorges.png',
         },
         {
-            name: 'Certificado conclusão asp .net core',
+            name: 'Certificate of completion of ASP.NET Core course.',
             image: '../assets/certifications/Certificado_IniciandocomASP.NETCore_NathanFerreiraBorges.png',
             pdfPath: '../assets/certifications/Certificado_IniciandocomASP.NETCore_NathanFerreiraBorges.png',
         },
         {
-            name: 'Certificado conclusão fundamentos arquitetura de software',
+            name: 'Certificate of completion of Fundamentals of Software Architecture course.',
             image: '../assets/certifications/Certificado_FundamentosdeArquiteturadeSoftware_NathanFerreiraBorges.png',
             pdfPath: '../assets/certifications/Certificado_FundamentosdeArquiteturadeSoftware_NathanFerreiraBorges.png',
         },

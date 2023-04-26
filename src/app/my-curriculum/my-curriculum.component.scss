@@ -82,11 +82,11 @@
                 }
 
                 #engineer-jr {
-                    width: 43%;
+                    width: 70.7%;
                 }
 
                 #stag {
-                    width: 55%;
+                    width: 79%;
                 }
             }
 
@@ -137,7 +137,7 @@
     section {
         p,
         a {
-            font-size: small;
+            font-size: 15px;
         }
     }
 }
@@ -191,36 +191,6 @@
         section {
             p {
                 font-size: large;
-            }
-        }
-    }
-}
-
-@media (max-width: 531px) {
-    .main {
-        section {
-            p {
-                font-size: medium;
-            }
-        }
-    }
-}
-
-@media (max-width: 478px) {
-    .main {
-        section {
-            p {
-                font-size: smaller;
-            }
-        }
-    }
-}
-
-@media (max-width: 407px) {
-    .main {
-        section {
-            p {
-                font-size: x-small;
             }
         }
     }
