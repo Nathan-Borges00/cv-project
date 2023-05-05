@@ -1,11 +1,12 @@
+<div id="status-message" aria-live="polite"></div>
 <div class="d-flex justify-content-center align-items-center main">
     <section class="curriculum d-flex w-100 m-5">
         <div class="left-side text-break text-light p-3">
             <section id="title">
                 <div class="d-flex align-items-center flex-column">
                     <img
-                        src="assets/imgs/eu.jpeg"
                         alt="Esse sou eu, homem de 23 anos, com barba feita, óculos de grau devido a míopia, tom de pele branca, e cabelo na cor castanho escuro com topete como estilo de cabelo"
+                        src="assets/imgs/eu.jpeg"
                         class="mt-3 img-fluid rounded-circle border border-light-subtle"
                     />
                     <h3 class="my-3 text-center">
@@ -161,9 +162,10 @@
                         <div
                             class="progress w-100 ms-3"
                             role="progressbar"
-                            aria-label="Meu nivel atual de inglês."
+                            aria-label="Meu conhecimento atual em Angular está em 50%."
                             aria-valuemin="0"
                             aria-valuemax="100"
+                            aria-valuenow="50"
                         >
                             <div class="progress-bar text-dark" style="width: 50%"></div>
                         </div>
@@ -173,9 +175,10 @@
                         <div
                             class="progress w-100 ms-3"
                             role="progressbar"
-                            aria-label="Meu nivel atual de inglês."
+                            aria-label="Meu conhecimento atual em GitHub está em 90%."
                             aria-valuemin="0"
                             aria-valuemax="100"
+                            aria-valuenow="90"
                         >
                             <div class="progress-bar text-dark" style="width: 90%"></div>
                         </div>
@@ -185,9 +188,10 @@
                         <div
                             class="progress w-100 ms-3"
                             role="progressbar"
-                            aria-label="Meu nivel atual de inglês."
+                            aria-label="Meu conhecimento atual na Amazon está em 40%."
                             aria-valuemin="0"
                             aria-valuemax="100"
+                            aria-valuenow="40"
                         >
                             <div class="progress-bar text-dark" style="width: 40%"></div>
                         </div>
@@ -197,9 +201,10 @@
                         <div
                             class="progress w-100 ms-3"
                             role="progressbar"
-                            aria-label="Meu nivel atual de inglês."
+                            aria-label="Meu conhecimento atual em Splunk está em 40%."
                             aria-valuemin="0"
                             aria-valuemax="100"
+                            aria-valuenow="40"
                         >
                             <div class="progress-bar text-dark" style="width: 40%"></div>
                         </div>
@@ -219,7 +224,13 @@
                 <h3>Certifications</h3>
                 <div class="certificate d-flex flex-wrap">
                     <div class="certificate-itens me-3" *ngFor="let certificate of certificates">
-                        <img src="{{ certificate.image }}" class="rounded" (click)="openPdf(certificate.pdfPath)" />
+                        <img
+                            src="{{ certificate.image }}"
+                            alt="{{ certificate.name }} certificate"
+                            class="rounded"
+                            (click)="openPdf(certificate.pdfPath)"
+                            [attr.aria-label]="'Open ' + certificate.name + ' certificate'"
+                        />
                         <h6 class="pt-2 px-2">{{ certificate.name }}</h6>
                     </div>
                 </div>

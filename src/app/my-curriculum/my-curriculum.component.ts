@@ -14,9 +14,17 @@ export class MyCurriculumComponent implements OnInit {
 
     ngOnInit() {
         this.certificates = this.certificateService.getCertificates();
+        this.loadPageMassage();
     }
 
     openPdf(pdfPath: string): void {
         window.open(pdfPath, '_blank');
+    }
+
+    loadPageMassage() {
+        const statusMessage = document.getElementById('status-message');
+        if (statusMessage) {
+            statusMessage.textContent = 'Curriculo de Nathan Ferreira Borges carregado com sucesso!';
+        }
     }
 }
