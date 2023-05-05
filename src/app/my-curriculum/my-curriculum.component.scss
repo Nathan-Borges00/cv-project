@@ -1,31 +1,27 @@
 .main {
-    background: darkslategray;
+    background: #1c1c1c;
     .curriculum {
         max-width: 1000px;
         min-height: 1000px;
-        box-shadow: 0 35px 55px rgba(0, 0, 0, 0.9);
+        box-shadow: 0 35px 55px rgba(94, 94, 94, 0.9);
         .left-side {
-            background-color: rgb(37, 33, 33);
+            background-color: #2d2c2a;
             flex-basis: 30%;
 
             .progress {
                 background-color: rgb(56, 50, 50);
             }
             .progress-bar {
-                background-color: hsla(162, 100%, 40%, 0.66) !important;
+                background-color: #fee39a !important;
             }
 
             #title {
-                .download {
-                    font-size: x-large;
-                    color: whitesmoke;
-                }
                 h4 {
-                    color: hsla(162, 100%, 40%, 0.537);
+                    color: #fee39aa1;
                     font-weight: bold;
                 }
                 h3 {
-                    color: hsl(162, 100%, 40%);
+                    color: #fdca40;
                     font-weight: bold;
                 }
                 hr {
@@ -51,13 +47,13 @@
 
             #education {
                 h6 {
-                    color: hsla(162, 98%, 24%, 0.781);
+                    color: #fee39ad0;
                     font-weight: bold;
                 }
             }
         }
         .right-side {
-            background-color: rgb(231, 231, 231);
+            background-color: white;
             flex-basis: 70%;
 
             h3 {
@@ -69,15 +65,19 @@
             }
 
             .progress-bar {
-                background-color: hsla(162, 100%, 40%, 0.66) !important;
+                background-color: #f79824 !important;
             }
 
             #experience {
                 text-align: justify;
 
+                h5 {
+                    color: #f22b29;
+                }
+
                 .year-company {
                     h6 {
-                        color: hsla(162, 100%, 40%, 0.841);
+                        color: #f4442e;
                     }
                 }
 
@@ -120,13 +120,13 @@
     }
 
     h5 {
-        color: hsl(162, 99%, 28%);
+        color: #f79824;
         font-weight: bold;
     }
 
     i,
     svg {
-        color: hsla(162, 100%, 40%, 0.537);
+        color: #fee39a;
     }
 
     img {
