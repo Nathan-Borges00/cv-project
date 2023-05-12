@@ -203,7 +203,7 @@
             <section id="certifications">
                 <h3>Certifications</h3>
                 <div class="certificate d-flex flex-wrap">
-                    <div class="certificate-itens me-3" *ngFor="let certificate of certificates">
+                    <div class="certificate-itens me-3 mb-2" *ngFor="let certificate of certificates">
                         <img
                             src="{{ certificate.image }}"
                             alt="{{ certificate.name }} certificate"
@@ -213,6 +213,14 @@
                         />
                         <h6 class="pt-2 px-2">{{ certificate.name }}</h6>
                     </div>
+                </div>
+            </section>
+            <section id="hobbies">
+                <h3>Hobbies</h3>
+                <div class="d-flex hobbies">
+                    <p><fa-icon [icon]="control" class="me-2"></fa-icon>Play video game</p>
+                    <p><fa-icon [icon]="soccer" class="me-2"></fa-icon>Play soccer</p>
+                    <p><fa-icon [icon]="swimming" class="me-2"></fa-icon>Swimming</p>
                 </div>
             </section>
         </div>

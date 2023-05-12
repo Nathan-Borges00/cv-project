@@ -116,6 +116,23 @@
                     }
                 }
             }
+
+            #hobbies {
+                fa-icon {
+                    color: #1c1c1c;
+                    font-size: xx-large;
+                }
+
+                .hobbies {
+                    justify-content: space-around;
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                }
+            }
         }
     }
 
@@ -168,6 +185,14 @@
 
                     .fw-bolder {
                         margin: 0px;
+                    }
+                }
+
+                #hobbies {
+                    .hobbies {
+                        p {
+                            font-size: smaller;
+                        }
                     }
                 }
             }

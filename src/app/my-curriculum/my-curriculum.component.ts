@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CertificateService } from './services/certificate.service';
 import { Certificate } from './interfaces/certificate';
-import { faCakeCandles } from '@fortawesome/free-solid-svg-icons';
+import { faCakeCandles, faGamepad, faFutbol, faPersonSwimming } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-my-curriculum',
@@ -10,6 +10,9 @@ import { faCakeCandles } from '@fortawesome/free-solid-svg-icons';
 })
 export class MyCurriculumComponent implements OnInit {
     cakeCandles = faCakeCandles;
+    soccer = faFutbol;
+    swimming = faPersonSwimming;
+    control = faGamepad;
 
     certificates: Certificate[] = [];
 
